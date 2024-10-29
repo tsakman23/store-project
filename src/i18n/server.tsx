@@ -2,7 +2,7 @@ import { env } from "@/env.mjs";
 import { IntlMessageFormat } from "intl-messageformat";
 import type { IntlNamespaceKeys, NamespacedKeys } from "./types";
 
-type En = typeof import("../../messages/en-US.json");
+type En = typeof import("../../messages/en.json");
 
 export const getLocale = async () => env.NEXT_PUBLIC_LANGUAGE;
 export const getMessages = async () =>
